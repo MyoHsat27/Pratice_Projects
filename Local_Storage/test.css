@@ -1,0 +1,20 @@
+.parent {
+  background-color: rgb(41, 39, 39);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  transition: bottom 1s ease;
+}
+
+.toastAlertContainerTag {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0px;
+}
+
+.toastAlertTextTag {
+  padding: 8px 0px;
+  margin-right: 20px;
+}

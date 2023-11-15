@@ -1,0 +1,56 @@
+#list {
+    display: block;
+    color: black;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(101, 255, 255);
+    margin: 20px 0px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+#input {
+    display: block;
+    margin: 30px auto;
+    border: solid 1px rgb(109, 109, 109);
+    border-radius: 3px;
+}
+
+#input:focus-visible {
+    outline: none;
+    padding: 5px 8px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+button {
+    border: none;
+    color: white;
+    transition: all 0.1s;
+    border-radius: 4px;
+    margin: 0px 3px;
+}
+
+.delBtn {
+    background-color: rgb(242, 74, 74);
+    padding: 3px 7px;
+}
+
+.delBtn:hover {
+    background-color: rgb(220, 62, 62);
+}
+
+.editBtn {
+    background-color: rgb(46, 240, 36);
+    padding: 3px 10px;
+}
+
+.editBtn:hover {
+    background-color: rgb(39, 221, 39);
+}

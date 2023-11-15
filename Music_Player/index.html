@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Primary Meta Tags -->
+      <title>TwoMen - Music Player</title>
+      <meta name="title" content="TwoMen - Music Player" />
+      <link rel="icon" type="image/png" href="data/Images/meta-background.jpg" />
+      <!-- <meta
+         name="description"
+         content="Listen the Popular Music in the Same Place. Rock and Roll ! Let's Roll!!!"
+      /> -->
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+      <meta property="og:title" content="TwoMen - Music Player" />
+      <!-- <meta
+         property="og:description"
+         content="Listen the Popular Music in the Same Place. Rock and Roll ! Let's Roll!!!"
+      /> -->
+      <meta property="og:image" content="data/Images/meta-background.jpg" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+      <meta property="twitter:title" content="TwoMen - Music Player" />
+      <!-- <meta
+         property="twitter:description"
+         content="Listen the Popular Music in the Same Place. Rock and Roll ! Let's Roll!!!"
+      /> -->
+      <meta property="twitter:image" content="data/Images/meta-background.jpg" />
+      <link rel="stylesheet" href="2_css/css_library/MDB-5/css/mdb.min.css" />
+      <!-- Components -->
+      <link rel="stylesheet" href="2_css/component/navbar.css" />
+      <link rel="stylesheet" href="2_css/component/current_song_section.css" />
+      <link rel="stylesheet" href="2_css/component/playlist_album_section.css" />
+      <link rel="stylesheet" href="2_css/component/scrollbar.css" />
+      <link rel="stylesheet" href="2_css/component/userselet-color.css" />
+      <link rel="stylesheet" href="2_css/component/progress-bar.css" />
+      <link rel="stylesheet" href="2_css/component/hamburger-menu.css" />
+      <link rel="stylesheet" href="2_css/component/album-animation.css" />
+
+      <title>Document</title>
+   </head>
+
+   <body style="height: 950px">
+      <div class="nav-bar container">
+         <div class="logo-container">
+            <a href=".">
+               <div class="logo">TWO MEN</div>
+            </a>
+            <div class="logo-music-player">music player</div>
+         </div>
+      </div>
+
+      <!-- Current Playing Song Section -->
+      <section class="current-song-container">
+         <div class="current-song-content-background container">
+            <div class="current-song-text-container">
+               <div class="inner-text current-artist-name"></div>
+               <div class="inner-text current-song-name"></div>
+            </div>
+            <div class="btn-pause-container">
+               <div
+                  class="progress-bar-each-btn start-btn-container current-start-btn-container"
+                  style="display: none"
+               >
+                  <i class="fa-regular fa-circle-play start-btn"></i>
+               </div>
+               <div
+                  class="progress-bar-each-btn pause-btn-container current-pause-btn-container"
+                  style="display: 0"
+               >
+                  <i class="fa-regular fa-circle-pause pause-btn"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Current Playing Song Section -->
+
+      <!-- Playlist and Albums Section -->
+      <section class="playlist-albums-main-container">
+         <div class="container playlist-albums-container">
+            <div class="playlist-container">
+               <h3>Playlist</h3>
+               <div class="playlist-song-container"></div>
+            </div>
+            <div class="albums-container">
+               <div class="Album-viewAll-container">
+                  <h3>Albums</h3>
+                  <div class="view-all"></div>
+               </div>
+
+               <div class="album-song-container"></div>
+            </div>
+         </div>
+      </section>
+      <!-- Playlist and Albums Section -->
+
+      <!-- Progress Bar Section -->
+      <section class="progress-bar-container">
+         <div class="container progress-bar-content-container">
+            <div class="progress-bar">
+               <div class="progressing"></div>
+            </div>
+            <div class="progress-bar-btn">
+               <div class="progress-bar-each-btn">
+                  <i class="fa-solid fa-backward-step"></i>
+               </div>
+               <div
+                  class="progress-bar-each-btn start-btn-container progress-start-btn-container"
+               >
+                  <i class="fa-regular fa-circle-play start-btn"></i>
+               </div>
+               <div
+                  class="progress-bar-each-btn pause-btn-container progress-pause-btn-container"
+               >
+                  <i class="fa-regular fa-circle-pause pause-btn"></i>
+               </div>
+               <div class="progress-bar-each-btn">
+                  <i class="fa-solid fa-forward-step"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Progress Bar Section -->
+   </body>
+
+   <!-- MDB -->
+   <script
+      src="https://kit.fontawesome.com/1ce4101740.js"
+      crossorigin="anonymous"
+   ></script>
+   <script type="text/javascript" src="3_javascript/music-playing.js"></script>
+   <script src="2_css/css_library/MDB-5/js/mdb.min.js"></script>
+   <script src="3_javascript/hamburger-menu.js"></script>
+   <!-- <script type="text/javascript" src="3_javascript/music-progress-control.js"></script> -->
+</html>

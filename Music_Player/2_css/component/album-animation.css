@@ -1,0 +1,22 @@
+.albumImganimation {
+   animation-name: albumImgRotate;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-delay: 0;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-fill-mode: both;
+}
+@keyframes albumImgRotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.albumArrowanimation {
+   transition: all 0.3s ease-in;
+   transform: rotate(90deg);
+}

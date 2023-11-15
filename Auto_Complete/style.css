@@ -1,0 +1,24 @@
+.productItemContainers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 7px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+  background-color: white;
+}
+
+.productItemContainers:hover {
+  background-color: lightgray;
+}
+
+.productName {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.productImage {
+  height: 80%;
+}

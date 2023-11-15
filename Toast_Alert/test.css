@@ -1,0 +1,23 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.parent {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.alertDiv {
+  background-color: rgb(41, 39, 39);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: bottom 0.5s ease-in-out;
+  position: fixed;
+}

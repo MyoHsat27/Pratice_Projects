@@ -1,0 +1,13 @@
+.commentDiv {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-bottom: 30px;
+}
+
+#commentContainer {
+  display: flex;
+  flex-direction: column;
+}

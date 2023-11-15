@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Libraries -->
+      <link rel="stylesheet" href="library/MDB-5/css/mdb.min.css" />
+      <link rel="stylesheet" href="library/fontawesome-free-6.1.1-web/css/all.min.css" />
+      <link rel="stylesheet" href="library/animate.css/animate.min.css" />
+
+      <!-- Components -->
+      <link rel="stylesheet" href="2_css/structure.css" />
+      <title>Document</title>
+   </head>
+
+   <body>
+      <section class="main-container container-fluid">
+         <div class="row">
+            <!-- SideBar Start -->
+            <div class="col-12 col-lg-2 vh-100 menu shadow-2-strong nav-menu-container">
+               <div class="brand-container">
+                  <div class="brand d-flex align-items-center">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-shopping-bag bg-primary text-white p-1 rounded me-1"
+                     >
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                     </svg>
+                     Two Men
+                  </div>
+                  <div class="hide-menu-btn">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-x"
+                     >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                     </svg>
+                  </div>
+               </div>
+               <nav class="nav-menu">
+                  <ul class="list-unstyled">
+                     <li class="menu-item">
+                        <a href="dashboard.html" class="menu-item-link active">
+                           <span>
+                              <i class="fa-solid fa-home"></i>
+                              <span>Dashboard</span>
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu-spacer"></li>
+
+                     <li class="menu-title">
+                        <span> Manage Item </span>
+                     </li>
+                     <li class="menu-item">
+                        <a href="item-add.html" class="menu-item-link">
+                           <span>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Add Item</span>
+                           </span>
+                        </a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="item-list.html" class="menu-item-link">
+                           <span>
+                              <i class="fa-solid fa-list"></i>
+                              <span>Item List</span>
+                           </span>
+                           <span class="badge badge-pill badge-light">8</span>
+                        </a>
+                     </li>
+                     <li class="menu-spacer"></li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- SideBar End -->
+            <!-- Dashboard Container Start -->
+            <div class="col-12 col-lg-10 vh-100 content">
+               <!-- Header Navbar Start -->
+               <div class="row header-container mb-5">
+                  <div class="col-12">
+                     <div class="bg-primary rounded header">
+                        <div class="d-flex align-items-center">
+                           <div class="show-menu-btn me-3">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="feather feather-menu"
+                              >
+                                 <line x1="3" y1="12" x2="21" y2="12"></line>
+                                 <line x1="3" y1="6" x2="21" y2="6"></line>
+                                 <line x1="3" y1="18" x2="21" y2="18"></line>
+                              </svg>
+                           </div>
+                           <form action="" class="d-none d-sm-block">
+                              <div class="form-inline">
+                                 <input type="text" class="form-control me-2" />
+                                 <button class="btn search-btn btn-white">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+
+                        <div class="dropdown">
+                           <button
+                              class="btn btn-white dropdown-toggle dropdown-btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              <img src="__data/my-profile.jpg" class="shadow-1-soft" alt="" />
+                              <div>Myo Hsat</div>
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Order</a>
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li>
+                                 <a class="dropdown-item" href="#">Logout</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Header Navbar End -->
+
+               <!-- Items Card Start -->
+               <div class="row">
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                     <div
+                        class="card mb-4 status-card"
+                        onclick="go('https://getbootstrap.com/docs/5.0/utilities/shadows/')"
+                     >
+                        <div class="card-body">
+                           <div class="row justify-content-center align-items-center">
+                              <div class="col-3">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-shopping-bag text-primary"
+                                 >
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                 </svg>
+                              </div>
+                              <div class="col-7">
+                                 <div class="fw-bold fs-4">
+                                    <span class="counter-up">54</span>
+                                 </div>
+                                 <div class="fw-bold fs-6 text-black-50">Today Order</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                     <div
+                        class="card mb-4 status-card"
+                        onclick="go('https://getbootstrap.com/docs/5.0/utilities/shadows/')"
+                     >
+                        <div class="card-body">
+                           <div class="row justify-content-center align-items-center">
+                              <div class="col-3">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-users text-primary"
+                                 >
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                 </svg>
+                              </div>
+                              <div class="col-7">
+                                 <div class="fw-bold fs-4">
+                                    <span class="counter-up">643</span>
+                                 </div>
+                                 <div class="fw-bold fs-6 text-black-50">Total User</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                     <div class="card mb-4 status-card" onclick="go('item-list.html')">
+                        <div class="card-body">
+                           <div class="row justify-content-center align-items-center">
+                              <div class="col-3">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-package text-primary"
+                                 >
+                                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                    <path
+                                       d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                                    ></path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                 </svg>
+                              </div>
+                              <div class="col-7">
+                                 <div class="fw-bold fs-4">
+                                    <span class="counter-up">327</span>
+                                 </div>
+                                 <div class="fw-bold fs-6 text-black-50">Total Items</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                     <div
+                        class="card mb-4 status-card"
+                        onclick="go('https://getbootstrap.com/docs/5.0/utilities/shadows/')"
+                     >
+                        <div class="card-body">
+                           <div class="row justify-content-center align-items-center">
+                              <div class="col-3">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="34"
+                                    height="34"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-map-pin text-primary"
+                                 >
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                 </svg>
+                              </div>
+                              <div class="col-7">
+                                 <div class="fw-bold fs-4">
+                                    <span class="counter-up">4</span>
+                                 </div>
+                                 <div class="fw-bold fs-6 text-black-50">Location</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Items Card End -->
+
+               <!-- Content Area Start -->
+               <div class="row justify-content-center align-items-end">
+                  <!-- Order & Viewer Chart Start -->
+                  <div class="col-12 col-lg-7">
+                     <div class="card mb-4">
+                        <div class="">
+                           <div class="d-flex px-3 py-2 justify-content-between align-items-center">
+                              <h5 class="m-0 fw-bold">Order & Viewer</h5>
+                              <div class="">
+                                 <img src="__data/avatar1.jpg" class="rounded-circle orderViewImg" alt="" />
+                                 <img src="__data/avatar2.jpg" class="rounded-circle orderViewImg" alt="" />
+                                 <img src="__data/avatar3.jpg" class="rounded-circle orderViewImg" alt="" />
+                                 <img src="__data/avatar4.jpg" class="rounded-circle orderViewImg" alt="" />
+                                 <img src="__data/avatar5.jpg" class="rounded-circle orderViewImg" alt="" />
+                              </div>
+                           </div>
+                           <canvas id="orderViewer" height="150"></canvas>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Order & Viewer Chart End -->
+
+                  <!-- Slide Items Start -->
+                  <div class="col-12 col-lg-5 col-md-6">
+                     <div class="card item-carousel-card mb-4">
+                        <div class="card-body">
+                           <div
+                              id="carouselExampleIndicators"
+                              class="carousel slide item-carousel"
+                              data-bs-ride="carousel"
+                           >
+                              <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                    <div class="item-card">
+                                       <div class="d-flex justify-content-between align-items-end">
+                                          <div class="flex-grow-1">
+                                             <h4 class="fs-5 fw-bold m-0">Coffee Cup</h4>
+                                             <p class="m-0 fw-bold text-black-50">500 MMK</p>
+                                             <div class="progress mt-3 rounded" style="height: 8px">
+                                                <div
+                                                   class="progress-bar"
+                                                   role="progressbar"
+                                                   style="width: 46%"
+                                                   aria-valuenow="25"
+                                                   aria-valuemin="0"
+                                                   aria-valuemax="100"
+                                                ></div>
+                                             </div>
+                                          </div>
+
+                                          <img class="item-card-img" src="__data/item1.png" alt="" />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="item-card">
+                                       <div class="d-flex justify-content-between align-items-end">
+                                          <div class="flex-grow-1">
+                                             <h4 class="fs-5 fw-bold m-0">Memory Stick</h4>
+                                             <p class="m-0 fw-bold text-black-50">37000 MMK</p>
+                                             <div class="progress mt-3 rounded" style="height: 8px">
+                                                <div
+                                                   class="progress-bar"
+                                                   role="progressbar"
+                                                   style="width: 17%"
+                                                   aria-valuenow="25"
+                                                   aria-valuemin="0"
+                                                   aria-valuemax="100"
+                                                ></div>
+                                             </div>
+                                          </div>
+                                          <img class="item-card-img" src="__data/item2.png" alt="" />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="item-card">
+                                       <div class="d-flex justify-content-between align-items-end">
+                                          <div class="flex-grow-1">
+                                             <h4 class="fs-5 fw-bold m-0">Diary Book</h4>
+                                             <p class="m-0 fw-bold text-black-50">4000 MMK</p>
+                                             <div class="progress mt-3 rounded" style="height: 8px">
+                                                <div
+                                                   class="progress-bar"
+                                                   role="progressbar"
+                                                   style="width: 40%"
+                                                   aria-valuenow="25"
+                                                   aria-valuemin="0"
+                                                   aria-valuemax="100"
+                                                ></div>
+                                             </div>
+                                          </div>
+                                          <img class="item-card-img" src="__data/item3.png" alt="" />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="item-card">
+                                       <div class="d-flex justify-content-between align-items-end">
+                                          <div class="flex-grow-1">
+                                             <h4 class="fs-5 fw-bold m-0">Sticker</h4>
+                                             <p class="m-0 fw-bold text-black-50">300 MMK</p>
+                                             <div class="progress mt-3 rounded" style="height: 8px">
+                                                <div
+                                                   class="progress-bar"
+                                                   role="progressbar"
+                                                   style="width: 75%"
+                                                   aria-valuenow="25"
+                                                   aria-valuemin="0"
+                                                   aria-valuemax="100"
+                                                ></div>
+                                             </div>
+                                          </div>
+                                          <img class="item-card-img" src="__data/item4.png" alt="" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Slide Items End -->
+
+                  <!-- Order & Place Chart Start -->
+                  <div class="col-12 col-lg-5 col-md-6">
+                     <div class="card mb-4">
+                        <div class="card-body p-2">
+                           <div class="d-flex m-3 justify-content-between align-items-center">
+                              <h5 class="m-0 fw-bold">Order & Place</h5>
+                              <di
+                                 class="d-flex justify-content-between align-items-center"
+                                 v
+                                 class="d-flex justify-content-center align-items-center"
+                              >
+                                 <i class="fa-solid fa-chart-pie text-primary fs-4"></i>
+                              </di>
+                           </div>
+                           <canvas id="orderChart" height="300"></canvas>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Order & Place Chart End -->
+
+                  <!-- Subscriber Table List Start -->
+                  <div class="col-12 col-lg-7">
+                     <div class="card mb-4">
+                        <div class="d-flex justify-content-between align-items-center mx-4 my-3">
+                           <h5 class="fw-bold m-0">Subscriber List</h5>
+
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-more-vertical text-primary m-0"
+                           >
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="12" cy="5" r="1"></circle>
+                              <circle cx="12" cy="19" r="1"></circle>
+                           </svg>
+                        </div>
+                        <div class="overflow-y-scroll subscriber-table-container" style="height: 420px">
+                           <table class="table table-hover sub-list">
+                              <thead>
+                                 <tr>
+                                    <th scope="col"><span class="fw-bold">Name</span></th>
+                                    <th scope="col"><span class="fw-bold">Company</span></th>
+                                    <th scope="col"><span class="fw-bold">Start Date</span></th>
+                                    <th scope="col"><span class="fw-bold">Status</span></th>
+                                    <th scope="col"><span class="fw-bold">Amount</span></th>
+                                    <th scope="col"><span class="fw-bold">Action</span></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-danger">Close</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-danger">Close</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-danger">Close</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-success">Open</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">Michael Austin</th>
+                                    <td>ABC Fintech LTD.</td>
+                                    <td>Jan 1,2019</td>
+                                    <td><span class="fw-bold small badge badge-pill badge-danger">Close</span></td>
+                                    <td>$1000.00</td>
+                                    <td>
+                                       <i class="fs-5 text-danger fa-solid fa-trash-can"></i>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Subscriber Table List End -->
+               </div>
+               <!-- Content Area End -->
+            </div>
+            <!-- Dashboard Container End -->
+         </div>
+      </section>
+   </body>
+
+   <!-- Libraries -->
+   <script src="library/MDB-5/js/mdb.min.js"></script>
+   <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+   ></script>
+   <script type="text/javascript" src="library/jquery/jquery.js"></script>
+   <script type="text/javascript" src="library/chart.js/dist/chart.min.js"></script>
+   <script type="text/javascript" src="library/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+   <script type="text/javascript" src="library/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.js"></script>
+   <script type="text/javascript" src="library/Counter-Up-master/jquery.counterup.min.js"></script>
+   <!-- Components -->
+
+   <script type="text/javascript" src="3_javascript/app.js"></script>
+   <script type="text/javascript" src="3_javascript/dashboard.js"></script>
+</html>

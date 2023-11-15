@@ -1,0 +1,35 @@
+.humburger-container {
+   width: 300px;
+   height: 100%;
+   background-color: rgba(81, 80, 80, 0.461);
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 10;
+   transform: translateX(350px);
+   transition: all 0.6s ease-in-out;
+}
+.open-humburger {
+   transform: translateX(0px);
+}
+.move-menu-container {
+   transform: translateX(100px) translateY(0px);
+}
+.menu-bar {
+   transition: all 0.4s ease-in-out;
+}
+
+.menu-icon {
+   z-index: 18;
+   transition: all 0.5s ease-in-out;
+}
+.first-bar {
+   transform: rotate(45deg) translateX(-2px);
+}
+.second-bar {
+   transform: translateX(-40px);
+   opacity: 0;
+}
+.third-bar {
+   transform: rotate(-45deg) translateX(12px) translateY(-15px);
+}

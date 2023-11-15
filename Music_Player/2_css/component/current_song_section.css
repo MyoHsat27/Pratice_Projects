@@ -1,0 +1,67 @@
+.current-song-container {
+   margin-top: 20px;
+}
+
+.current-song-content-background {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-image: url("../../data/Images/meta-background.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 60px 50px;
+   border-radius: 10px;
+   position: relative;
+   transition: all 0.5s ease-out;
+   height: 250px;
+}
+
+.current-song-content-background::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   left: 0;
+   top: 0;
+   background: rgba(0, 0, 0, 0.294);
+}
+
+.current-artist-name {
+   font-size: 15px;
+}
+
+.current-song-name {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.current-song-text-container {
+   z-index: 5;
+}
+
+.btn-pause-container {
+   z-index: 9;
+   cursor: pointer;
+   user-select: none;
+}
+
+.btn-pause-container .fa-circle-play {
+   font-size: 50px;
+   color: rgba(255, 255, 255, 0.429);
+   transition: all 0.1s ease-in-out;
+}
+.btn-pause-container .fa-circle-play:hover {
+   color: rgba(255, 255, 255, 0.768);
+}
+
+.btn-pause-container .fa-circle-pause {
+   font-size: 50px;
+   color: rgba(255, 255, 255, 0.429);
+   transition: all 0.1s ease-in-out;
+}
+
+.btn-pause-container .fa-circle-pause:hover {
+   color: rgba(255, 255, 255, 0.768);
+}

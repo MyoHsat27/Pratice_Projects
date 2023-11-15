@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Libraries -->
+      <link rel="stylesheet" href="library/MDB-5/css/mdb.min.css" />
+      <link rel="stylesheet" href="library/fontawesome-free-6.1.1-web/css/all.min.css" />
+
+      <!-- Components -->
+      <link rel="stylesheet" href="2_css/structure.css" />
+      <title>Document</title>
+   </head>
+
+   <body>
+      <section class="main-container container-fluid">
+         <div class="row">
+            <!-- SideBar Start -->
+            <div class="col-12 col-lg-2 vh-100 menu shadow-2-strong overflow-y-scroll nav-menu-container">
+               <div class="brand-container">
+                  <div class="brand d-flex align-items-center">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-shopping-bag bg-primary text-white p-1 rounded me-1"
+                     >
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                     </svg>
+                     Two Men
+                  </div>
+                  <div class="hide-menu-btn">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-x"
+                     >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                     </svg>
+                  </div>
+               </div>
+               <nav class="nav-menu">
+                  <ul class="list-unstyled">
+                     <li class="menu-item">
+                        <a href="dashboard.html" class="menu-item-link">
+                           <span>
+                              <i class="fa-solid fa-home"></i>
+                              <span>Dashboard</span>
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu-spacer"></li>
+
+                     <li class="menu-title">
+                        <span> Manage Item </span>
+                     </li>
+                     <li class="menu-item">
+                        <a href="item-add.html" class="menu-item-link active">
+                           <span>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Add Item</span>
+                           </span>
+                        </a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="item-list.html" class="menu-item-link">
+                           <span>
+                              <i class="fa-solid fa-list"></i>
+                              <span>Item List</span>
+                           </span>
+                           <span class="badge badge-pill badge-light">8</span>
+                        </a>
+                     </li>
+                     <li class="menu-spacer"></li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- SideBar End -->
+
+            <!-- Dashboard Container Start -->
+            <div class="col-12 col-lg-10 vh-100 content">
+               <!-- Header Navbar Start -->
+               <div class="row header-container mb-4">
+                  <div class="col-12">
+                     <div class="bg-primary rounded header">
+                        <div class="d-flex align-items-center">
+                           <div class="show-menu-btn me-3">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="feather feather-menu"
+                              >
+                                 <line x1="3" y1="12" x2="21" y2="12"></line>
+                                 <line x1="3" y1="6" x2="21" y2="6"></line>
+                                 <line x1="3" y1="18" x2="21" y2="18"></line>
+                              </svg>
+                           </div>
+                           <form action="" class="d-none d-sm-block">
+                              <div class="form-inline">
+                                 <input type="text" class="form-control me-2" />
+                                 <button class="btn search-btn btn-white">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+
+                        <div class="dropdown">
+                           <button
+                              class="btn btn-white dropdown-toggle dropdown-btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              <img src="__data/my-profile.jpg" class="shadow-1-soft" alt="" />
+                              <div>Myo Hsat</div>
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Order</a>
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li>
+                                 <a class="dropdown-item" href="#">Logout</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Header Navbar End -->
+
+               <!-- Content Area Start -->
+               <div class="row">
+                  <div class="col-12">
+                     <nav>
+                        <ol class="breadcrumb mb-4">
+                           <li class="breadcrumb-item">
+                              <a href="dashboard.html"><i class="fa-solid fa-house"></i></a>
+                           </li>
+                           <li class="breadcrumb-item"><a href="item-list.html">Item</a></li>
+                           <li class="breadcrumb-item active">Add Item</li>
+                        </ol>
+                     </nav>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-sm-10 col-md-8">
+                     <div class="card mb-4">
+                        <div class="card-body">
+                           <div class="d-flex justify-content-between align-items-center">
+                              <div class="fs-5"><i class="fa-solid fa-circle-plus text-primary"></i> Add Item</div>
+                              <a href="item-list.html"
+                                 ><button class="btn btn-outline-primary px-3 py-2">
+                                    <i class="fa-solid fa-list"></i></button
+                              ></a>
+                           </div>
+                           <hr />
+                           <form action="#" method="post">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <div class="form-group mb-3">
+                                       <label class="form-label text-black" for="photoUpload"
+                                          >Photo Upload
+                                          <i
+                                             class="fa-solid fa-circle-exclamation text-black-50"
+                                             title="Only support jpg and png."
+                                          ></i
+                                       ></label>
+                                       <input id="photoUpload" type="file" name="photo" class="form-control" required />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label for="itemName" class="form-label text-black">Item Name</label>
+                                       <input id="itemName" type="text" name="itemName" class="form-control" required />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label for="selectType" class="form-label text-black">Select Item</label>
+                                       <select
+                                          id="selectType"
+                                          type="text"
+                                          name="selectType"
+                                          class="form-select"
+                                          required
+                                       >
+                                          <option selected disabled>Select Type</option>
+                                          <option value="0">Wet</option>
+                                          <option value="1">Dry</option>
+                                       </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label for="mainCategory" class="form-label text-black">Main Category</label>
+                                       <select
+                                          id="mainCategory"
+                                          type="text"
+                                          name="mainCategory"
+                                          class="form-select"
+                                          required
+                                       >
+                                          <option selected value="default">Select Category</option>
+                                       </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label for="subCategory" class="form-label text-black">Sub Category</label>
+                                       <select
+                                          id="subCategory"
+                                          type="text"
+                                          name="subCategory"
+                                          class="form-select"
+                                          required
+                                       >
+                                          <option selected>Select Sub Category</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="row mb-3">
+                                       <div class="col-12 col-lg-6">
+                                          <label class="form-label text-black" for="quantity">Item Quantity</label>
+                                          <input id="quantity" type="number" class="form-control" />
+                                       </div>
+                                       <div class="col-12 col-lg-6">
+                                          <label class="form-label text-black" for="unit">Unit</label>
+                                          <select id="unit" type="text" class="form-select">
+                                             <option selected></option>
+                                             <option value="0">quantity</option>
+                                             <option value="1">g</option>
+                                             <option value="2">kg</option>
+                                             <option value="3">lb</option>
+                                             <option value="4">mm</option>
+                                             <option value="5">cm</option>
+                                             <option value="6">m</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label class="form-label text-black" for="price">Price</label>
+                                       <input id="price" type="number" class="form-control" />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                       <label class="form-label text-black" for="description">Description</label>
+                                       <textarea
+                                          class="form-control"
+                                          name="description"
+                                          id="description"
+                                          rows="8"
+                                          placeholder="The products can be ordered from White Start Online Mall."
+                                          style="font-size: 15px"
+                                       ></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <hr />
+                           <button class="btn btn-primary">Add Item</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Content Area Start -->
+            </div>
+            <!-- Dashboard Container End -->
+         </div>
+      </section>
+   </body>
+
+   <!-- Libraries -->
+
+   <script src="library/MDB-5/js/mdb.min.js"></script>
+   <script type="text/javascript" src="library/jquery/jquery.js"></script>
+   <script type="text/javascript" src="library/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+   <script type="text/javascript" src="library/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.js"></script>
+   <!-- Components -->
+   <script type="text/javascript" src="3_javascript/item_add.js"></script>
+   <script type="text/javascript" src="3_javascript/app.js"></script>
+</html>
