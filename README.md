@@ -1,2 +1,2 @@
 # Pratice_Projects
-Mini projects that were implemented along the studying
+Mini projects that were implemented along the way of studying
