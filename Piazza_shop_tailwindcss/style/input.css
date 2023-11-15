@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+   @apply bg-white rounded overflow-hidden shadow-md relative cursor-pointer transition ease-linear;
+}
+
+.badge {
+   @apply bg-orange-500 text-white text-xs font-bold uppercase rounded-full p-2 absolute left-0 top-0 m-3 flex justify-center items-center;
+}
+
+.btn {
+   @apply rounded-full px-3 py-2 mx-2 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <!-- Libraries & Frameworks -->
+      <link rel="stylesheet" href="tailwindcss/output.css" />
+   </head>
+   <style></style>
+   <body class="text-gray-500 flex justify-center">
+      <div class="py-5">
+         <div>
+            <div class="text-blue-500 py-1 xsm:text-2xl font-bold text-xl select-none">Voucher App</div>
+            <div class="text-sm font-semibold select-none">Tailwind CSS & jQuery</div>
+         </div>
+         <div class="mt-10">
+            <div class="flex justify-between items-center mb-5">
+               <div class="text-gray-700 font-bold text-xl">Product List</div>
+               <div class="bg-blue-500 rounded p-1 cursor-pointer active:bg-blue-700 addNewListBtn">
+                  <svg
+                     class="w-5 text-white"
+                     xmlns="http://www.w3.org/2000/svg"
+                     class="h-6 w-6"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke="currentColor"
+                     stroke-width="2"
+                  >
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
+               </div>
+            </div>
+            <div class="w-80 overflow-auto sm:w-97 md:w-98">
+               <table class="border border-gray-300 w-full">
+                  <thead>
+                     <tr>
+                        <th class="border border-gray-300 p-2 text-gray-500 font-semibold">#</th>
+                        <th class="border border-gray-300 p-2 text-gray-500 font-semibold text-start">Product Name</th>
+                        <th class="border border-gray-300 p-2 text-gray-500 font-semibold text-end">Cost</th>
+                        <th class="border border-gray-300 p-2 text-gray-500 font-semibold text-end">Quantity</th>
+                        <th class="border border-gray-300 p-2 text-gray-500 font-semibold text-end">Price</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <!-- Product Row is Here -->
+                  </tbody>
+                  <tfoot>
+                     <tr>
+                        <td class="border border-gray-300 p-2 text-gray-500 font-semibold text-center" colspan="4">
+                           Total
+                        </td>
+                        <td class="total-price border border-gray-300 p-2 text-end text-xl font-bold w-40">0</td>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <!-- Script -->
+   <script src="vendor/jquery/dist/jquery.min.js"></script>
+   <script src="javascript/app.js"></script>
+</html>
